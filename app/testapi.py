@@ -9,7 +9,7 @@ app.config["DEBUG"] = True
 defult_address = "/"
 my_address = "/https://oooo2552.github.io/linguisticpuzzle/experiment.html"
 
-@app.route('/')
+@app.route('/myindex')
 def index():
     return "index page"
 
