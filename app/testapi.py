@@ -4,7 +4,9 @@ import camera
 from flask import request
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = True
+
+#app.config["DEBUG"] = True
+CORS(app)
 
 defult_address = "/"
 my_address = "/https://oooo2552.github.io/linguisticpuzzle/experiment.html"
@@ -24,4 +26,4 @@ def start_camera():
     return "<h1>This is second camera for facial expression</h1>"
 
 
-app.run()
+#app.run()
