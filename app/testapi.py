@@ -18,8 +18,8 @@ def start_camera():
     #if request.method == 'POST':
     #insert_values = request.get_json() 
     #filename = insert_values['subject']
-    filename = input("please enter the filename:")
-    #filename = "test2"
+    #filename = input("please enter the filename:")
+    filename = "test_heroku"
     camera.main(filename)
     return "<h1>This is second camera for facial expression</h1>"
 
