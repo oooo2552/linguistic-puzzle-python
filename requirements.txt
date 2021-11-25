@@ -4,3 +4,5 @@ gunicorn
 numpy
 scikit-learn==0.24.2
 xgboost==0.90
+opencv-contrib-python
+requests
