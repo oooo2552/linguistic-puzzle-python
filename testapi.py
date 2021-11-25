@@ -11,7 +11,7 @@ CORS(app)
 defult_address = "/"
 my_address = "/https://oooo2552.github.io/linguisticpuzzle/experiment.html"
 
-@app.route('/myindex')
+@app.route('/')
 def index():
     return "index page"
 
