@@ -12,7 +12,7 @@ from flask import request
 
 @app.route('/')
 def index():
-    return render_template('index.html') #return "index page"
+    return "index page"
 
 @app.route('/camera', methods=['GET','POST'])
 def start_camera():
@@ -22,13 +22,8 @@ def start_camera():
     else:
       #filename = input("please enter the filename:")
       filename = "test3"
-    #camera.main(filename)
-    #return "<h1>This is second camera for facial expression</h1>"
-    return Response(camera.main(filename), mimetype='multipart/x-mixed-replace; boundary=frame')
-    
-@app.route('/video_feed')
-def video_feed():
-    return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
+      camera.main(filename)
+    return "<h1>This is second camera for facial expression</h1>"
 
 #app.run()
 if __name__ == '__main__':
